@@ -394,8 +394,8 @@ a:focus {
 
 .navbar-brand {
   margin-top: 10px;
-  max-width:200px;
-  max-height:150px;
+  max-width:100px;
+  max-height:75px;
   width: auto;
   height: auto;
 }
