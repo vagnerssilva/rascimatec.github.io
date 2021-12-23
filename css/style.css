@@ -72,6 +72,16 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   border: 1px solid #721764;
 }
 
+/*=== utilitarios ===*/
+.cropped1 {
+  width: 86.4px; /* width of container */
+  height: 86.4px; /* height of container */
+  object-fit: cover;
+  /* border: 5px solid black; */
+}
+
+
+/* fim */
 .form-control {
   box-shadow: none;
   border-radius: 0;
@@ -469,7 +479,7 @@ a:focus {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("../images/bg/slider-bg-1.jpg") no-repeat;
+  background: url("../images/projects/bayieeemax/baymax_premio.png") no-repeat;
   background-size: cover;
   min-height: 550px;
 }
