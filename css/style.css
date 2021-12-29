@@ -475,6 +475,12 @@ a:focus {
   position: relative;
 }
 
+.bg-dualboot {
+  background: url("../images/blog/dualboot/dualboot.png") no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+
 .banner {
   position: relative;
   overflow: hidden;
