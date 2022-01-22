@@ -1096,6 +1096,16 @@ a:focus {
   font-weight: 500;
 }
 
+.author-name {
+  font-size: 14px;
+  font-weight: 250;
+}
+
+.author-subtitle {
+  font-size: 8px;
+  font-weight: 250;
+}
+
 .comment-area span {
   font-size: 14px;
 }
