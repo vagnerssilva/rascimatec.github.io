@@ -1,4 +1,4 @@
-/*=== MEDIA QUERY ===*/
+/*=== tEDIA QUERY ===*/
 /*
 Theme Name: Medic
 Author: Themefisher
@@ -363,8 +363,18 @@ a:focus {
   margin-bottom: 70px;
 }
 
+
 .section-title h2 {
   color: #721764;
+}
+
+.section-title-red {
+  margin-bottom: 70px;
+}
+
+
+.section-title-red h2 {
+  color: #71051c;
 }
 
 .text-lg {
