@@ -1549,6 +1549,7 @@ a:focus {
 #slider {
   margin: 0 auto;
   width: 1080px;
+  /* height: 480px; */
   max-width: 100%;
   text-align: center;
 }
