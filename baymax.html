@@ -138,38 +138,29 @@
 				<h5>Recomendações iniciais</h5> -->
 				<table><tr><td align='justify'>	
 					O projeto consiste na construção de um robô autônomo capaz de auxiliar os agentes de saúde no processo de triagem por meio da medição de parâmetros do estado de saúde do paciente, tais como pressão sanguínea, oxigenação e temperatura e registrá-los nas respectivas fichas dos pacientes. O robô exibirá perguntas numa tela LCD e também as emitirá pela via sonora através de um alto-falante e receberá as respostas do paciente por meio de comandos de voz.</br>
-
+                </br>
                     Durante a execução do projeto será construído um modelo em um software de modelagem 3D para o corpo do robô para posterior impressão 3D. Além disso, será desenvolvida uma placa de circuito impresso responsável por interligar os sensores, atuadores e controlador, bem como retificar a tensão de entrada a fim de disponibilizá-la para o carregamento das baterias. Por fim, a lógica de funcionamento do robô será implementada por meio do framework ROS (Robot Operating System).
                     </br>
-                    A realização do projeto só foi possível graças ao financiamento de $2.000 dólares recebido através de um edital do RAS Chapter Initiative Grant da RAS. Para mais detalhes acesse esse post.
-
-
+                </br>
+                    A realização do projeto só foi possível graças ao financiamento de $2.000 dólares recebido através de um edital do RAS Chapter Initiative Grant da RAS.
 				</td></tr></table>
 
 			</br>
             <img src="images/projects/bayieeemax/baymax_premio.png" alt="" class="img-fluid" width=100%> <br>
 				</br>
 
-
-
-				<table><tr><td align='justify'>
-                <h4></h4>
-<br>
 				<h5>Definição dos Subsistemas</h5>
-
                 <table><tr><td align='justify'>
 					Logo nas primeiras etapas do projeto foi construída uma PBS (quadro de estrutura do projeto) contendo todos os subsistemas essências e quais componentes fariam parte de cada um deles. A imagem abaixo mostra essa estrutura, dividida entre: Alimentação, Percepção, Processamento, Atuação e Monitoramento.</br>
 				</td></tr></table>
                 <img src="images/projects/bayieeemax/pbs.jpeg" alt="" class="img-fluid" width=100% > <br>
             </br>
 
-
-				<h4>Simulação</h4>
-                <center>
+				<h5>Simulação</h5>
+				<center>
                     <img src="images/projects/bayieeemax/baymax_ros.jpg" alt="" class="img-fluid" width=40%> <br>
-
                 </center>
-                
+
 				<table><tr><td align='justify'>
                     O ROS é um framework que possui uma série de ferramentas úteis para o desenvolvimento de robôs. Por exemplo, ele é capaz de simplificar para o usuário o processo de comunicação dos diferentes componentes de um robô, tais como os motores, sensores, baterias e o software através de um sistema baseado em tópicos e mensagens.</p>
 
@@ -178,18 +169,23 @@
                     Uma grande vantagem da simulação é que podem ser construídos ambientes virtuais complexos semelhantes aos hospitais reais, que seriam de difícil acesso para todos os testes necessários ao longo do projeto. Além disso, falhas podem ser identificadas e melhorias implementadas sem a necessidade de estar com o robô em mãos ou da construção de um campo de trainamento.</p>
                     
                     Atualmente estamos desenvolvendo a teleoperação, que será usada para fins de testes no robô após a sua montagem, a navegação autônoma e a integração com os sensores que serão usados durante a triagem.</p>
+	
                     <img src="images/projects/bayieeemax/baymax_ros_gazebo.jpeg" alt="" class="img-fluid" width=100%> <br>
                 </p>
-                    A imagem acima mostra o ambiente de simulação Gazebo com o robô implementado por meio do ROS.</p>
 
-                    O uso de rodas omnidirecionais foi adotado para permitir ao robô maior liberdade de movimento, possibilitando inclusive movimentos diagonais, sem a necessidade de rotação ao redor do próprio eixo. A imagem abaixo apresenta um esquema sobre a relação vetorial ligada à este movimento
-                </p>
-                    Descrição da cinemática do movimento omnidirecional (Fonte: TAHERI, H.; QIAO, B.; GHAEMINEZHAD, N. 2015).
-                </p>
-                <center><img src="images/projects/bayieeemax/baymax_ros_omni_kinematic.png" alt="" class="img-fluid" width=60%> <br></center>
+                A imagem acima mostra o ambiente de simulação Gazebo com o robô implementado por meio do ROS.</p>
+
+				O uso de rodas omnidirecionais foi adotado para permitir ao robô maior liberdade de movimento, possibilitando inclusive movimentos diagonais, sem a necessidade de rotação ao redor do próprio eixo. A imagem abaixo apresenta um esquema sobre a relação vetorial ligada à este movimento.
+			</p>
+				Descrição da cinemática do movimento omnidirecional (Fonte: TAHERI, H.; QIAO, B.; GHAEMINEZHAD, N. 2015).
+			</p>
+			<center><img src="images/projects/bayieeemax/baymax_ros_omni_kinematic.png" alt="" class="img-fluid" width=60%> <br></center>
             </p>
 
-            <h4>Eletrônica</h4>
+                </td></tr></table>
+
+
+			<h4>Eletrônica</h4>
         
             <table><tr><td align='justify'>
                 KiCad é um programa computacional de código aberto para projeto eletrônico assistido por computador, com o objetivo de facilitar a concepção de layouts e suas conversões para placas de circuito impresso.</p>
@@ -206,16 +202,23 @@
             </p>
                A imagem acima apresenta estágio atual da Main board, com o modelo tridimensional dos componentes utilizados e que serão interligados por meio da placa de circuito impresso. 
         </p>
+			</td></tr></table>
 
-        <h4>Modelagem 3D</h4>
+			<h4>Modelagem 3D</h4>
         
         <table><tr><td align='justify'>
-            A criação do modelo virtual do Baieeemax foi feito através de um longo processo criativo, buscando referências e opiniões de membros e pessoas externas ao projeto. Inicialmente, o robô seria feito de forma que sua estrutura fosse semelhante a um humano, passando por diversas ideias para o corpo (retangular, com curvas, quadrado e etc) que foram sendo amadurecidas e resultou no atual CAD que possuímos hoje, sendo o corpo dele retangular, com 2 braços, uma base para esconder as rodas omnidirecionais e um espaço para posicionarmos o display dele, ou seja, a tela touchscreen para interação com o usuário. Seu corpo é constituído de diversos acessórios, alguns para fins estéticos, outros com funções simples, e alguns até que combinam estética com funcionalidade. O formato atual dele passou também pelo processo avaliativo não só da equipe, mas também pela avaliação de membros e pessoas externas IEEE, porém, ainda sim, ele ainda pode passar por mudanças até a fase de construção.
+            A criação do modelo virtual do Baieeemax foi feito através de um longo processo criativo, buscando referências e opiniões de membros e pessoas externas ao projeto.
+            Inicialmente, o robô seria feito de forma que sua estrutura fosse semelhante a um humano, passando por diversas ideias para o corpo (retangular, com curvas, quadrado e etc)
+            que foram sendo amadurecidas e resultou no atual CAD que possuímos hoje, sendo o corpo dele retangular, com 2 braços, uma base para esconder as rodas omnidirecionais e um espaço para posicionarmos o display dele, ou seja, a tela touchscreen para interação com o usuário.
+            Seu corpo é constituído de diversos acessórios, alguns para fins estéticos, outros com funções simples, e alguns até que combinam estética com funcionalidade. O formato atual dele passou também pelo processo avaliativo não só da equipe, mas também pela avaliação de membros e pessoas externas IEEE, porém, ainda sim, ele ainda pode passar por mudanças até a fase de construção. A imagem abaixo apresenta o CAD atual do baymax.
+		</br>
+		</br>
+            <center><img src="images/projects/bayieeemax/baymax_cad.jpeg" alt="" class="img-fluid" width=60%> <br></center>
         </p>
-
+			</td></tr></table>
         </p>
-
-        <h4> Equipe de desenvolvimento</h4>
+		
+		<h4> Equipe de desenvolvimento</h4>
     </p>
 
         <h5>Software</h5>
@@ -235,7 +238,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+                <tr class="font-weight-bolder" style="text-align: center margin-top 0">
                     <td width="33%"><center>Gabriel Calmon</center></td>
                     <td></td>
                     <td width="33%"><center>Victor Guerra</center></td>
@@ -273,7 +276,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+                <tr class="font-weight-bolder" style="text-align: center margin-top 0">
                     <td width="25%"><center>Ruan Utah</center></td>
                     <td></td>
                     <td width="25%"><center>Julia Nascimento</center></td>
@@ -310,7 +313,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
+                <tr class="font-weight-bolder" style="text-align: center margin-top 0">
                     <td width="50%"><center>Caio Oliva</center></td>
                     <td></td>
                     <td width="50%"><center>Yan Valdez</center></td>
@@ -327,18 +330,7 @@
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-			</td></tr></table>
-				<div class="mt-5 clearfix">
+				<!-- <div class="mt-5 clearfix">
 				    <ul class="float-left list-inline tag-option"> 
 				    	<li class="list-inline-item"><a href="#">Advancher</a></li>
 				    	<li class="list-inline-item"><a href="#">Landscape</a></li>
@@ -352,10 +344,14 @@
 				        <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont-pinterest" aria-hidden="true"></i></a></li>
 				        <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont-linkedin" aria-hidden="true"></i></a></li>
 				    </ul>
-			    </div>
+			    </div> -->
 			</div>
 		</div>
 	</div>
+
+
+	  
+
 
 
 
@@ -367,13 +363,13 @@
 
 
 
-	<div class="sidebar-widget search  mb-3 ">
+	<!-- <div class="sidebar-widget search  mb-3 ">
 		<h5>Busque aqui</h5>
 		<form action="#" class="search-form">
 			<input type="text" class="form-control" placeholder="search">
 			<i class="ti-search"></i>
 		</form>
-	</div>
+	</div> -->
 
 
 
@@ -457,7 +453,7 @@
 							<i class="icofont-email mr-3"></i>
 							<span class="h6 mb-0">Fale conosco por email</span>
 						</div>
-						<h4 class="mt-2"><a href="tel:+23-345-67890">sbc.cimatec.ras@ieee.org</a></h4>
+						<h4 class="mt-2"><a>sbc.cimatec.ras@ieee.org</a></h4>
 					</div>
 
 					<div class="footer-contact-block">
@@ -465,7 +461,7 @@
 							<i class="icofont-location-pin"></i>
 							<span class="h6 mb-0">Nosso endereço</span>
 						</div>
-						<h6 class="mt-2"><a href="endereço"> Av. Orlando Gomes, 1845 - Piatã, Salvador - BA, 41650-010</a></h6>
+						<h6 class="mt-2"><a> Av. Orlando Gomes, 1845 - Piatã, Salvador - BA, 41650-010</a></h6>
 					</div>
 				</div>
 			</div>
